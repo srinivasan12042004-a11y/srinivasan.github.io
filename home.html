@@ -8,50 +8,62 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
-            <ul class="nav-links">
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-                <li><a href="#">Option 4</a></li>
-                <li><a href="#">Option 5</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm Srinvasan</h1>
-            <p>A passionate learner in Computer Science & Cognitive Science</p>
+        <!-- Hamburger -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
         </div>
-    </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    I am a student interested in machine learning, EEG signal processing, 
-                    and building meaningful projects. This website showcases my work, 
-                    skills, and journey in technology.
-                </p>
-            </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+            <li><a href="#">Option 5</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <div class="about-image">
-                <img src="your-photo.jpg" alt="My Photo">
-            </div>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm Your Name</h1>
+        <p>A passionate learner in Computer Science & Cognitive Science</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am a student interested in machine learning, EEG signal processing,
+                and building meaningful projects. This website showcases my work,
+                skills, and journey in technology.
+            </p>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Your Name | All Rights Reserved</p>
-    </footer>
+        <div class="about-image">
+            <img src="your-photo.jpg" alt="My Photo">
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
